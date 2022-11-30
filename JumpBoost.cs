@@ -13,6 +13,6 @@ public class JumpBoost : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        
+        other.GetComponent<Jump>().jumpStrength /= jumpBoost;
     }
 }
